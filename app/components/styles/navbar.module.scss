@@ -1,0 +1,55 @@
+.nav_container {
+  z-index: 5;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  background: #000000;
+  .nav_ul {
+    top: 3.2vh;
+    position: absolute;
+    right: 3vw;
+    li {
+      display: inline-block;
+      margin-left: 5vw;
+      list-style: none;
+      .nav_link {
+        display: block;
+        top: 5vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        text-decoration: none;
+        font-size: 0.8vw;
+        color: #fff;
+      }
+    }
+  }
+  .nav_logo {
+    width: 12vw;
+    margin-top: 1.6vh;
+    margin-left: 25%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav_container {
+    height: 7vh;
+    position: sticky;
+    margin-bottom: 0;
+    .nav_ul {
+      top: 0vh;
+      margin-top: 18px;
+      li {
+        .nav_link {
+          margin-left: 1vw;
+          margin-right: 1vw;
+          font-size: 2vw;
+        }
+      }
+    }
+    .nav_logo {
+      width: 20vw;
+      margin-left: 15%;
+    }
+  }
+}

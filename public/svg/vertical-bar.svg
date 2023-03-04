@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.21 325.92">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_69-2);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_69);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_2);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_2" data-name="Degradado sin nombre 2" x1="11.11" y1="384.9" x2="11.11" y2="14.16" gradientUnits="userSpaceOnUse">
+      <stop offset=".17" stop-color="#efc981"/>
+      <stop offset=".39" stop-color="#f2d78f"/>
+      <stop offset=".73" stop-color="#c58511"/>
+      <stop offset=".9" stop-color="#e4b76c"/>
+      <stop offset=".95" stop-color="#eec687"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="cls-5" x="-169.37" y="452.98" width="312.67" height="205.73"/>
+    </clipPath>
+    <linearGradient id="Degradado_sin_nombre_69" data-name="Degradado sin nombre 69" x1="-152.87" y1="796.26" x2="933.77" y2="796.26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9a338"/>
+      <stop offset=".33" stop-color="#f7edda"/>
+      <stop offset=".64" stop-color="#d9a338"/>
+      <stop offset="1" stop-color="#b1872e"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_69-2" data-name="Degradado sin nombre 69" x1="-166.05" y1="790.41" x2="954.78" y2="790.41" xlink:href="#Degradado_sin_nombre_69"/>
+  </defs>
+  <rect class="cls-3" x="6.05" y="5" width="10.11" height="315.92"/>
+  <g class="cls-4">
+    <g>
+      <path class="cls-2" d="m76.1,1278.14c-.63,0-1.2-.39-1.44-.98l-227.42-579.28c-.26-.65-.04-1.4.54-1.81L376.89,314.67c.51-.36,1.18-.39,1.71-.06l554.43,343.56c.6.37.87,1.1.66,1.77l-186.46,593.73c-.2.62-.76,1.06-1.41,1.08l-669.67,23.38s-.04,0-.05,0Zm-225.55-580.27l226.59,577.15,667.49-23.31,185.77-591.55L377.86,317.78-149.45,697.87Z"/>
+      <path class="cls-1" d="m739.76,1281.42H48.96c-.65,0-1.24-.41-1.45-1.03l-213.47-605.01c-.23-.66.01-1.4.6-1.79L393.51,299.67c.52-.35,1.2-.35,1.72,0l558.87,373.92c.58.39.83,1.13.6,1.79l-213.47,605.01c-.22.62-.8,1.03-1.45,1.03Zm-689.71-3.08h688.62l212.71-602.86L394.36,302.8-162.65,675.48,50.05,1278.34Z"/>
+    </g>
+  </g>
+</svg>
