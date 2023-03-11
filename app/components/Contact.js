@@ -24,57 +24,64 @@ export default function Contact() {
       )
   }
   return (
-    <div id="contactanos" className={styles.contact_container}>
-      <div className={styles.contact_image_wrapper}>
-        <Image
-          src={'/img/contact-global-contable.jpg'}
-          width={1444}
-          height={964}
-          className={styles.contact_image}
-          alt="Global Contable - Contáctanos"
-        />
-      </div>
-      <div className={styles.contact_content}>
-        <div>
+    <div id="contactanos">
+      <motion.div
+        className={styles.contact_container}
+        whileInView={{ x: '0%', opacity: 1 }}
+        initial={{ x: '-100%', opacity: 0 }}
+        transition={{ duration: 1, damping: 10, delay: 0.5 }}
+      >
+        <div className={styles.contact_image_wrapper}>
           <Image
-            priority={true}
-            src={'/svg/horizontal-bar.svg'}
-            width={0}
-            height={0}
-            className={styles.contact_bar}
-            alt="Global Contable - La mejor gestión contable"
+            src={'/img/contact-global-contable.jpg'}
+            width={1444}
+            height={964}
+            className={styles.contact_image}
+            alt="Global Contable - Contáctanos"
           />
         </div>
-        <p className={styles.contact_subtitle}>NO DUDES EN CONTACTARNOS</p>
-        <h2>CONTÁCTANOS</h2>
-        <p className={styles.contact_phrase}>
-          Déjanos saber cómo podemos asesorarte
-        </p>
-      </div>
-      <div className={styles.contact_form_wrapper}>
-        <form ref={refForm} onSubmit={sendEmail}>
-          <div className={styles.form_row1}>
-            <input type="text" name="name" placeholder="Nombre" />
-          </div>
-          <div className={styles.form_row2}>
-            <input type="email" name="email" placeholder="Email" />
-            <input type="tel" name="phone" placeholder="Teléfono" />
-          </div>
-          <div className={styles.form_row3}>
-            <textarea name="message" placeholder="Mensaje"></textarea>
-          </div>
+        <div className={styles.contact_content}>
           <div>
-            <motion.input
-              whileHover={{
-                scale: 1.1,
-              }}
-              type="submit"
-              value="Enviar"
-              className={styles.form_button}
+            <Image
+              priority={true}
+              src={'/svg/horizontal-bar.svg'}
+              width={0}
+              height={0}
+              className={styles.contact_bar}
+              alt="Global Contable - La mejor gestión contable"
             />
           </div>
-        </form>
-      </div>
+          <p className={styles.contact_subtitle}>NO DUDES EN CONTACTARNOS</p>
+          <h2>CONTÁCTANOS</h2>
+          <p className={styles.contact_phrase}>
+            Déjanos saber cómo podemos asesorarte
+          </p>
+        </div>
+        <div className={styles.contact_form_wrapper}>
+          <form ref={refForm} onSubmit={sendEmail}>
+            <div className={styles.form_row1}>
+              <input type="text" name="name" placeholder="Nombre" />
+            </div>
+            <div className={styles.form_row2}>
+              <input type="email" name="email" placeholder="Email" />
+              <input type="tel" name="phone" placeholder="Teléfono" />
+            </div>
+            <div className={styles.form_row3}>
+              <textarea name="message" placeholder="Mensaje"></textarea>
+            </div>
+            <div>
+              <motion.input
+                whileHover={{
+                  scale: 1.1,
+                }}
+                type="submit"
+                value="Enviar"
+                className={styles.form_button}
+              />
+            </div>
+          </form>
+        </div>
+      </motion.div>
     </div>
   )
 }
