@@ -32,7 +32,27 @@
   }
 
   .home_banner_social {
+    left: 95vw;
+    margin-top: 5%;
     color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 5;
+    .social_wa,
+    .social_ig,
+    .social_fb {
+      width: auto;
+      height: auto;
+      fill: #fff;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        fill: #efc981;
+        scale: 1.1;
+        transition: all 0.2s ease-in-out;
+      }
+    }
   }
   .home_banner_bar {
     position: absolute;
@@ -56,14 +76,14 @@
     }
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
   .home_banner {
     margin-top: 0;
     width: auto;
     height: 25vh;
 
     .home_banner_social {
-      color: #fff;
+      left: 90vw;
     }
     .home_banner_bar {
       height: 10vh;

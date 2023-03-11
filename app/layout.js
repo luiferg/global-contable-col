@@ -1,5 +1,3 @@
-'use client'
-import NavBar from './components/NavBar'
 import './globals.scss'
 
 import { DM_Sans } from 'next/font/google'
@@ -17,10 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={dm_sans.className}>
-      <body>
-        <NavBar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

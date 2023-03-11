@@ -28,4 +28,138 @@
       filter: grayscale(1) blur(5px);
     }
   }
+  .contact_content {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    padding-top: 5vh;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 0;
+    color: #000;
+    h2 {
+      font-size: 3.5vw;
+    }
+    p {
+      font-size: 1.5vw;
+    }
+
+    .contact_bar {
+      width: 7vw;
+      height: auto;
+    }
+  }
+  .contact_form_wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    margin: 18% 20% 0 20%;
+    input,
+    textarea {
+      padding: 1.8vh;
+      border: none;
+      background-color: #f2f2f2;
+      border-radius: 12px;
+      width: 100%;
+      font-family: inherit;
+      box-sizing: border-box;
+      font-size: 1vw;
+      &:focus {
+        outline: none;
+        background-color: #d3d3d3;
+      }
+    }
+
+    .form_row1 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 4vh;
+      input {
+        width: 100%;
+      }
+    }
+
+    .form_row2 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 4vh;
+      gap: 1rem; //Espacio entre inputs
+
+      input {
+        width: calc(
+          50% - 0.5rem
+        ); //Calculamos el ancho para que queden dos inputs alineados
+      }
+    }
+
+    .form_row3 {
+      textarea {
+        height: 10rem; //Altura de la textarea
+      }
+    }
+    .form_button {
+      background-color: #000;
+      color: #fff;
+      font-size: 1.2vw;
+      border-radius: 50px;
+      display: block;
+      width: 8vw;
+      margin: 0 auto;
+      margin-top: 1.5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact_container {
+    height: 40vh;
+    margin-top: 15vh;
+    border-top-left-radius: 18% 18%;
+    .contact_content {
+      padding-top: 2vh;
+      color: #000;
+      h2 {
+        font-size: 6vw;
+      }
+      p {
+        font-size: 3.4vw;
+      }
+
+      .contact_bar {
+        width: 10vw;
+        height: auto;
+      }
+    }
+    .contact_form_wrapper {
+      margin: 33% 10% 0 10%;
+      input,
+      textarea {
+        padding: 1vh;
+        font-size: 3.4vw;
+      }
+
+      .form_row1 {
+        margin-bottom: 1vh;
+      }
+
+      .form_row2 {
+        margin-bottom: 1vh;
+      }
+
+      .form_row3 {
+        textarea {
+          height: 5rem;
+        }
+      }
+      .form_button {
+        font-size: 2.5vw;
+        width: 20vw;
+      }
+    }
+  }
 }

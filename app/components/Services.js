@@ -31,6 +31,7 @@ export default function Services() {
         <motion.div
           className={styles.services_card}
           onClick={() => setCard1IsHovered(!card1IsHovered)}
+          whileHover={{ scale: 1.05 }}
         >
           <div className={styles.card_image_wrapper}>
             <Image
@@ -72,6 +73,7 @@ export default function Services() {
         <motion.div
           className={styles.services_card}
           onClick={() => setCard2IsHovered(!card2IsHovered)}
+          whileHover={{ scale: 1.05 }}
         >
           <div className={styles.card_image_wrapper}>
             <Image

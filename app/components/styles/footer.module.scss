@@ -1,0 +1,129 @@
+.footer_container {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 12%;
+  padding-right: 8%;
+  padding-top: 5vh;
+  height: 50vh;
+  font-size: 1vw;
+  font-weight: 400;
+  width: auto;
+  color: #fff;
+  background-color: #000;
+  .footer_logo_container {
+    .footer_logo {
+      width: 15vw;
+      height: auto;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        scale: 1.1;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+  .footer_row1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4vh;
+    gap: 1rem;
+    div {
+      width: calc(50% - 0.5rem);
+    }
+    .site_map {
+      padding-left: 10vw;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        transition: all 0.2s ease-in-out;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+        margin-left: 0.4vw;
+        &:hover {
+          scale: 1.02;
+          color: #efc981;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  .footer_row2 {
+    display: flex;
+    flex-direction: row;
+    div {
+      width: calc(50% - 0.5rem);
+    }
+    .social_wa,
+    .social_ig,
+    .social_fb {
+      margin-right: 1rem;
+      margin-top: 1rem;
+      width: auto;
+      height: auto;
+      fill: #fff;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        fill: #efc981;
+        scale: 1.1;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    a:link {
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer_container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2vh;
+    height: 35vh;
+    font-size: 2.2vw;
+    .footer_logo_container {
+      .footer_logo {
+        width: 30vw;
+        padding-left: 33%;
+      }
+    }
+    .footer_row1 {
+      margin-bottom: 1vh;
+      gap: 0rem;
+      ul {
+        li {
+          margin-left: 1vw;
+          margin-bottom: 0.5rem;
+          font-weight: 700;
+        }
+      }
+      .footer_more_info {
+        margin-left: 5vw;
+      }
+    }
+    .footer_row2 {
+      div {
+        width: calc(50% - 0.5rem);
+      }
+      .social_wa,
+      .social_ig,
+      .social_fb {
+        margin-right: 0.4rem;
+        margin-top: 1rem;
+        &:hover {
+          fill: #efc981;
+          scale: 1.1;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+      a:link {
+        color: #fff;
+      }
+      .footer_copyright {
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}

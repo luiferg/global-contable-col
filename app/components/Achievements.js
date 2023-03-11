@@ -4,7 +4,7 @@ import styles from './styles/achievements.module.scss'
 
 export default function Achievements() {
   return (
-    <div className={styles.achievements_container}>
+    <div id="logros" className={styles.achievements_container}>
       <div className={styles.ach_card_grid}>
         <div className={styles.ach_card_row}>
           <div className={styles.ach_card}>

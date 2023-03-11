@@ -1,3 +1,8 @@
+.nav_sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 .nav_container {
   z-index: 5;
   height: 12vh;
@@ -14,12 +19,15 @@
       list-style: none;
       .nav_link {
         display: block;
-        top: 5vh;
+        top: 4.5vh;
         margin-left: 2vw;
         margin-right: 2vw;
         text-decoration: none;
-        font-size: 0.8vw;
+        font-size: 1vw;
         color: #fff;
+        &:hover {
+          color: #efc981;
+        }
       }
     }
   }
@@ -31,7 +39,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
   .nav_container {
     height: 7vh;
     position: sticky;

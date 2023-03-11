@@ -1,10 +1,23 @@
 import Image from 'next/image'
+import Facebook from './icons/Facebook'
+import Instagram from './icons/Instagram'
+import WhatsApp from './icons/WhatsApp'
 import styles from './styles/homebanner.module.scss'
 
 export default function HomeBanner() {
   return (
     <div className={styles.home_banner}>
-      <div className={styles.home_banner_social}></div>
+      <div className={styles.home_banner_social}>
+        <a href="https://wa.me/573134065099" target="_blank">
+          <WhatsApp className={styles.social_wa} />
+        </a>
+        <a href="https://instagram.com/global.contablebca" target="_blank">
+          <Instagram className={styles.social_ig} />
+        </a>
+        <a href="https://facebook.com/globalcontablebca" target="_blank">
+          <Facebook className={styles.social_fb} />
+        </a>
+      </div>
       <div className={styles.banner_image_wrapper}>
         <Image
           src={'/img/banner.jpg'}
